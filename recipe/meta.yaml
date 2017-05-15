@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "2.4.0" %}
-{% set sha256 = "53d4179086e1eec1c688705977387432c01031b0a7bd91b8ff6c912c08c3820d" %}
+{% set version = "2.5.1" %}
+{% set sha256 = "03aa752cf11db41d281ea1d807d954c4eda35cfa1b21d6971966cc041bbf6e2d" %}
 
 package:
   name: {{ name|lower }}
