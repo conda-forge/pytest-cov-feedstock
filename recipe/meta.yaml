@@ -25,12 +25,12 @@ requirements:
   run:
     - python
     - setuptools
-    - pytest
-    - coverage
+    - pytest >=3.6
+    - coverage >=4.4
 
 test:
   commands:
-    - "py.test --traceconfig | grep pytest-cov-{{version}}"
+    - "pytest --traceconfig | grep pytest-cov-{{version}}"
 
 about:
   home: https://github.com/pytest-dev/pytest-cov
