@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "2.6.1" %}
-{% set sha256 = "0ab664b25c6aa9716cbf203b17ddb301932383046082c081b9848a0edf5add33" %}
+{% set version = "2.7.1" %}
+{% set sha256 = "e00ea4fdde970725482f1f35630d12f074e121a23801aabf2ae154ec6bdd343a" %}
 
 package:
   name: {{ name|lower }}
@@ -25,12 +25,12 @@ requirements:
   run:
     - python
     - setuptools
-    - pytest
-    - coverage
+    - pytest >=3.6
+    - coverage >=4.4
 
 test:
   commands:
-    - "py.test --traceconfig | grep pytest-cov-{{version}}"
+    - "pytest --traceconfig | grep pytest-cov-{{version}}"
 
 about:
   home: https://github.com/pytest-dev/pytest-cov
