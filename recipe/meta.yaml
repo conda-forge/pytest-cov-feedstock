@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "2.9.0" %}
-{% set sha256 = "b6a814b8ed6247bd81ff47f038511b57fe1ce7f4cc25b9106f1a4b106f1d9322" %}
+{% set version = "2.10.0" %}
+{% set sha256 = "1a629dc9f48e53512fcbfda6b07de490c374b0c83c55ff7a1720b3fccff0ac87" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - setuptools
-    - pytest >=3.6
+    - pytest >=4.6
     - coverage >=4.4
 
 test:
