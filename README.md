@@ -5,7 +5,7 @@ Home: https://github.com/pytest-dev/pytest-cov
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Pytest plugin for measuring coverage
 
