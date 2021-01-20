@@ -26,7 +26,7 @@ requirements:
     - python
     - setuptools
     - pytest >=4.6
-    - coverage >=4.4
+    - coverage >=5.2.1
 
 test:
   commands:
