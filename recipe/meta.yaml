@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
 
   run:
-    - python
+    - python >=3.5
     - setuptools
     - pytest >=4.6
     - coverage >=5.2.1
