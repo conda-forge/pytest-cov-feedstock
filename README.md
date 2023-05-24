@@ -1,11 +1,11 @@
-About pytest-cov
-================
+About pytest-cov-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-cov-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytest-dev/pytest-cov
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-cov-feedstock/blob/main/LICENSE.txt)
 
 Summary: Pytest plugin for measuring coverage
 
