@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "5.0.0" %}
-{% set sha256 = "5837b58e9f6ebd335b0f8060eecce69b662415b16dc503883a02f45dfeb14857" %}
+{% set version = "6.0.0" %}
+{% set sha256 = "fde0b595ca248bb8e2d76f020b465f3b107c9632e6a1d1705f17834c89dcadc0" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
 
   run:
-    - python >=3.8
+    - python >=3.9
     - pytest >=4.6
-    - coverage >=5.2.1
+    - coverage >=7.5
     - toml
 
 test:
