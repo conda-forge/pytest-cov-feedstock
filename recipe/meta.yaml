@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "6.0.0" %}
-{% set sha256 = "fde0b595ca248bb8e2d76f020b465f3b107c9632e6a1d1705f17834c89dcadc0" %}
+{% set version = "6.1.0" %}
+{% set sha256 = "ec55e828c66755e5b74a21bd7cc03c303a9f928389c0563e50ba454a6dbe71db" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
