@@ -24,8 +24,9 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - pytest >=4.6
+    - pytest >=6.2.5
     - coverage >=7.5
+    - pluggy >=1.2
     - toml
 
 test:
