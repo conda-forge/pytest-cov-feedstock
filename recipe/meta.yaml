@@ -1,6 +1,6 @@
 {% set name = "pytest-cov" %}
-{% set version = "6.3.0" %}
-{% set sha256 = "35c580e7800f87ce892e687461166e1ac2bcb8fb9e13aea79032518d6e503ff2" %}
+{% set version = "7.0.0" %}
+{% set sha256 = "33c97eda2e049a0c5298e91f519302a1334c26ac65c1a483d6206fd458361af1" %}
 
 package:
   name: {{ name|lower }}
@@ -20,12 +20,13 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
+    - hatchling
+    - hatch-fancy-pypi-readme
 
   run:
     - python >={{ python_min }}
-    - pytest >=6.2.5
-    - coverage >=7.5
+    - pytest >=7
+    - coverage >=7.10.6
     - pluggy >=1.2
     - toml
 
