@@ -29,7 +29,6 @@ requirements:
     - pluggy >=1.2
     - pytest >=7
     - python >=${{ python_min }}
-    - tomli
 
 tests:
   - python:
@@ -42,8 +41,9 @@ tests:
       run:
         - python ${{ python_min }}.*
     script:
-      - pytest --traceconfig
-      - pytest | python -c "import re, sys; assert re.search(sys.stdin.read(), 'grep pytest-cov-${{ version }}')"
+      - |
+        echo "def test_ok(): pass" > test_ok.py
+      - pytest --traceconfig | python -c "import re, sys; assert 'pytest-cov-${{ version }}' in sys.stdin.read()"
 
 about:
   license: MIT
