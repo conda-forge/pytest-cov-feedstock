@@ -43,7 +43,7 @@ tests:
     script:
       - |
         echo "def test_ok(): pass" > test_ok.py
-      - pytest --traceconfig | python -c "import re, sys; assert 'pytest-cov-${{ version }}' in sys.stdin.read()"
+      - pytest --traceconfig | python -c "import sys; assert 'pytest-cov-${{ version }}' in sys.stdin.read()"
 
 about:
   license: MIT
